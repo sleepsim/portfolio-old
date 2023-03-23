@@ -150,6 +150,14 @@ input[type="text"]{
     padding-right: 5rem;
 }
 
+.main-body-home{
+    font-family: 'Mulish', sans-serif;
+    color: lightgray;
+    margin-top: 7rem;
+    padding-left: 14rem;
+    padding-right: 10rem;
+}
+
 .main-title{
     margin-bottom: 4rem;
 }

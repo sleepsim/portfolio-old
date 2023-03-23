@@ -47,7 +47,9 @@
 
 .no-grow{
     flex-grow: 0;
+    flex-basis: content;
 }
+
 
 
 /* Borders */
