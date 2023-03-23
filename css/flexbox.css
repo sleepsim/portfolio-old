@@ -2,6 +2,7 @@
 .flex-container{
     display: flex;
     gap: 1.5rem;
+    margin-top: 4rem;
 }
 
 .flex-container div{
@@ -20,6 +21,10 @@
     align-items: center;
 }
 
+.align-start{
+    align-items: flex-start;
+}
+
 .no-wrap{
     flex-wrap: nowrap;
 }
@@ -32,9 +37,18 @@
     flex-direction: column;
 }
 
-.gap-none{
+.no-gap{
     gap: 0;
 }
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.no-grow{
+    flex-grow: 0;
+}
+
 
 /* Borders */
 .top-border{
@@ -102,4 +116,8 @@
 /* Spacers */
 .left-padding{
     padding-left: 1rem;
+}
+
+.no-margin{
+    margin: 0;
 }

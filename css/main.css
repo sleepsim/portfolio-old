@@ -90,7 +90,7 @@ input[type="text"]{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--bg-color);
+    background-color: 0;
     overflow-x: hidden;
     /* filter: drop-shadow(0 0 0.4rem black); */
     padding-top: 25rem;
@@ -186,7 +186,7 @@ input[type="text"]{
     display: inline-block;
     padding: 0.5rem;
     font-family: 'Poppins';
-    color: black;
+    color: var(--purple-accent);
     background-color: var(--purple-accent);
     text-decoration: none;
     transition-property: background-color; 
@@ -200,7 +200,45 @@ input[type="text"]{
     background-color: rgb(100, 100, 255, 0.5);
     border: 0;
 }
+    
+.button-outline-purple{
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Poppins';
+    color: var(--purple-accent);
+    background-color: transparent;
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    border-radius: 8%;
+    border: 0.3rem var(--purple-accent) solid;
+    cursor: pointer;
+}
+
+.button-outline-purple:hover, .button-outline-purple:focus{
+    color: white;
+    /* Animations */
+    background-color: var(--purple-accent);
+    transition-duration: background-color 1.5s;
+    transition: color 0.5s;
+}
 
 .img-max-50{
     max-width: 50%;
 }
+
+.text-largest{
+    font-size: 4rem;
+}
+
+.text-orange{
+    color: var(--orange-accent);
+}
+
+.text-purple{
+    color: var(--purple-accent);
+}
+
