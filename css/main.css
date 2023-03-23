@@ -61,6 +61,19 @@ input[type="text"]{
 }
 
 /* Custom Classes */
+.main-nav{
+    z-index: 9999;
+    overflow: hidden;
+    background-color: var(--nav-color);
+    justify-content: flex-end;
+    gap: 1.5rem;
+    display: flex;
+}
+
+.main-nav a{
+    text-shadow:none;
+}
+
 .sidebar{
     height: 100%;
     width: 10rem;
@@ -74,13 +87,14 @@ input[type="text"]{
     padding-top: 10rem;
     padding-left: 1rem;
     font-family: 'Mulish', Arial, sans-serif;
-    font-weight: bold;
+    font-weight: light;
 }
 
 .sidebar a{
     padding: 6px 8px 6px 16px;
     display: block;
     border-radius: 1rem 0 0 1rem;
+    filter: drop-shadow(0 0 0.4rem rgb(0,0,0));
 }
 
 .sidebar a:hover, .sidebar a:focus{
