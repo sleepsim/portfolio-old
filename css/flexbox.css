@@ -2,7 +2,6 @@
 .flex-container{
     display: flex;
     gap: 1.5rem;
-    align-items: center;
 }
 
 .flex-container div{
@@ -15,6 +14,26 @@
 
 .flex-item h4{
     margin-top: 0;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.gap-none{
+    gap: 0;
 }
 
 /* Borders */
@@ -51,6 +70,7 @@
     padding-right: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    margin-top: 2rem;
     margin-right: 0%;
     margin-left: 65%;
     border-radius: 2rem 0rem 0rem 2rem ;
