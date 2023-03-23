@@ -1,0 +1,152 @@
+:root{
+    --bg-color: rgb(22,25,31);
+    --nav-color: rgb(25,25,25);
+    --white-accent: rgb(200,200,200);
+    --orange-accent: rgb(241, 137, 5);
+    --purple-accent: rgb(100,100,255);
+}
+
+/* Native Elements */
+body{
+    background-color: var(--bg-color);
+    padding-bottom: 4rem;
+}
+a{
+    color: lightgray;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+code{
+    background-color: var(--nav-color);
+    filter: drop-shadow(0 0 0.4rem var(--purple-accent));
+    padding: 0.5rem;
+    display: block;
+    width: 90%;
+}
+
+a:hover, a:focus{
+    color: var(--orange-accent);
+    text-shadow: 0 0 10px var(--orange-accent),
+                0 0 30px var(--orange-accent),
+                0 0 40px var(--orange-accent); 
+}
+
+section{
+    margin-top: 4rem;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+input{
+    accent-color: var(--orange-accent);  
+}
+  
+
+input[type="text"]{
+    background-color: rgb(54, 62, 99);
+    color: white;
+    width: 80%;
+    height: 3rem;
+}
+
+/* Custom Classes */
+.sidebar{
+    height: 100%;
+    width: 10rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--nav-color);
+    overflow-x: hidden;
+    filter: drop-shadow(0 0 0.4rem black);
+    padding-top: 10rem;
+    padding-left: 1rem;
+    font-family: 'Mulish', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar a{
+    padding: 6px 8px 6px 16px;
+    display: block;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.sidebar a:hover, .sidebar a:focus{
+    
+}
+
+.nav-example{
+    font-family: 'Mulish', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.main-body{
+    font-family: 'Mulish', sans-serif;
+    color: lightgray;
+    margin-top: 7rem;
+    padding-left: 14rem;
+    padding-right: 5rem;
+}
+
+.main-title{
+    margin-bottom: 4rem;
+}
+
+.color-box{
+    height: 2rem;
+    width: 35rem;
+}
+
+.nav-example{
+    font-size: 1.5rem;
+}
+
+.button-orange{
+    display: inline-block;
+    padding: 0.5rem;
+    font-family: 'Poppins';
+    color: black;
+    background-color: var(--orange-accent);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    border-radius: 8%;
+    cursor: pointer;
+    border: 0;
+}
+
+.button-orange:hover, .button-orange:active, .button-orange:focus{
+    background-color: rgb(241, 137, 5, 0.5);
+    border: 0;
+}
+
+.button-purple{
+    display: inline-block;
+    padding: 0.5rem;
+    font-family: 'Poppins';
+    color: black;
+    background-color: var(--purple-accent);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    border-radius: 8%;
+    cursor: pointer;
+    border: 0;
+}
+
+.button-purple:hover, .button-purple:active, .button-purple:focus{
+    background-color: rgb(100, 100, 255, 0.5);
+    border: 0;
+}

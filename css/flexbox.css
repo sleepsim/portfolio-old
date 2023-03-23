@@ -1,0 +1,71 @@
+/* Flexbox */
+.flex-container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.flex-container div{
+    padding-left: 2rem;
+}
+
+.flex-item{
+    flex:1;
+}
+
+.flex-item h4{
+    margin-top: 0;
+}
+
+/* Borders */
+.top-border{
+    position: relative;
+    border-right: 0.5rem var(--orange-accent) solid;
+    border-top: 0.5rem var(--orange-accent)  solid;
+    border-bottom: 0.5rem var(--purple-accent) solid;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    margin-right: 70%;
+    border-radius: 0 2rem 2rem 0 ;
+}
+
+.render-border{
+    position: relative;
+    border-left: 0.5rem var(--orange-accent) solid;
+    border-top: 0.5rem var(--orange-accent)  solid;
+    border-bottom: 0.5rem var(--purple-accent) solid;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-right: 10%;
+    border-radius: 2rem 0rem 0rem 2rem ;
+}
+
+.left-border{
+    position: relative;
+    border-left: 0.5rem var(--purple-accent) solid;
+    padding-left: 1rem;
+}
+
+.left-border-alternate{
+    position: relative;
+    border-left: 0.5rem var(--orange-accent) solid;
+    padding-left: 1rem;
+}
+
+.vertical-border{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 0.1rem;
+    padding-left: 0rem;
+    border-top-width: 0.10rem;
+    border-top-style: solid;
+    border-top-color: var(--orange-accent);
+}
+
+/* Spacers */
+.left-padding{
+    padding-left: 1rem;
+}
