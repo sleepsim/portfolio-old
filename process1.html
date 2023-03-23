@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Template1</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+
+        <div class="sidebar">
+            <a href=""><i class="bi bi-emoji-laughing-fill"></i></a>
+            <a href=""><i class="bi bi-envelope"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+            <a href="">Return to projects <i class="bi bi-chevron-right"></i> </a>
+        </div>
+
+        <nav class="main-nav-border">
+            <div class="main-nav">
+                <a href="" style="max-width: 15%;"><i class="bi bi-house"></i></a>
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Resume</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+
+        <div class="main-body">
+            <div class="flex-container flex-column align-center no-gap">
+                <h1 class="flex-item">YouTube Shorts Converter Extension</h1>
+                <img src="assets/pr1-1.png" class="flex-item">
+            
+                <p>Sometime around last year, YouTube introduced YouTube Shorts, a vertical video format that’s supposed to emulate popular video sites like Tik-Tok and Instagram Reels. The problem with shorts 
+                    however, was that it was turning some short videos that were not meant to be shorts into YT Shorts. My 
+                    issue with that is YT shorts gives you no control over playback, sound is only a toggle, and the video is fit 
+                    into a vertical frame
+                </p>
+
+                <p>My solution to this was a coding challenge for me, I created a chromium plugin that can automatically 
+                    convert YT Shorts back into the proper video format. YouTube videos have a unique id and what shorts 
+                    does is change it from watch?v={uniqueID} to shorts?v={uniqueID}. The solution was quite simple, grab 
+                    the URL, find the unique ID, then convert the link. The only issue was I’ve never worked with extensions 
+                    and javascript before
+                </p>
+
+                <img src="assets/pr1-2.png">
+
+                <p>After some research, I figured out that my first step should be to find the current tab the user is using. 
+                    Then I do a check if the user is one a shorts video, if it is, then start the process of converting it.
+                    I separate the full link string and isolate the unique video ID.
+                </p>
+
+                <img src="assets/pr1-3.png">
+
+                <p>From there, I create a new string that basically merges Youtube link + watch?v= + unique ID.
+                    Once that’s done, I created a function that automatically updates the current tab’s url to the fixed 
+                    youtube link thereby getting rid of shorts. The actual UI needs some work but it’s fully functional and 
+                    with a click of a button annoying youtube shorts are replaced with the real video player</p>
+
+                <img src="assets/pr1-4.png">
+
+                <p>This was a fun experience for me to learn JavaScript and coding chrome extensions. The final product looks very basic and incomplete, but the extension works as intended so I'm satisfied.</p>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -5,6 +5,10 @@
     margin-top: 4rem;
 }
 
+.flex-container img{
+    max-width: 70vh;
+}
+
 .flex-container div{
     padding-left: 2rem;
 }
