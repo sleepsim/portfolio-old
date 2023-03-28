@@ -6,7 +6,7 @@
 }
 
 .flex-container img{
-    max-width: 70vh;
+    max-width: 60vw;
 }
 
 .flex-container div{
@@ -39,6 +39,10 @@
 
 .flex-column{
     flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
 }
 
 .no-gap{
