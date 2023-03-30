@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/bootstrapcolumns.css">
 
+
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +32,11 @@
 
         <nav class="main-nav-border">
             <div class="main-nav">
-                <a href="" style="max-width: 15%;"><i class="bi bi-house"></i></a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="">Resume</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" style="max-width: 15%;"><i class="bi bi-house"></i></a>
+                <a href="about.html" class="main-nav-link" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">About</a>
+                <a href="projects.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Projects</a>
+                <a href="" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Resume</a>
+                <a href="contact.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Contact</a>
             </div>
         </nav>
 
@@ -109,6 +110,7 @@
 
             
         </div>
+        <script src="js/scripts.js"></script>
     </body>
 
 </html>

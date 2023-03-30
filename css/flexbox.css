@@ -5,7 +5,7 @@
   margin-top: 4rem;
 }
 .flex-container img {
-  max-width: 20vw;
+  max-width: 60vw;
 }
 .flex-container div {
   padding-left: 2rem;
@@ -132,4 +132,4 @@
   margin: 0;
 }
 
-/* Bootstrap style container *//*# sourceMappingURL=flexbox.css.map */
+/* Bootstrap style container */

@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/bootstrapcolumns.css">
+
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,11 +32,11 @@
 
         <nav class="main-nav-border">
             <div class="main-nav">
-                <a href="" style="max-width: 15%;"><i class="bi bi-house"></i></a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="">Resume</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html" style="max-width: 15%;"><i class="bi bi-house"></i></a>
+                <a href="about.html" class="main-nav-link" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">About</a>
+                <a href="projects.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Projects</a>
+                <a href="" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Resume</a>
+                <a href="contact.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Contact</a>
             </div>
         </nav>
 
@@ -43,7 +46,7 @@
                 <p class="no-margin">hello, I'm</p>
                 <h1 class="no-margin text-orange text-largest">Pocholo Andres</h1>
                 <h2 class="no-margin text-purple text-largest">web dev student</h2>
-                <p >Hi there, I'm Pocholo Luis, an aspiring web developer currently studying at SFU's Interactive Arts and Technology Program. My Focus is on front-end development, with additional experience in UX/UI design</p>
+                <p >Hi, I'm Pocholo Luis, an aspiring web developer currently studying at SFU's Interactive Arts and Technology Program. My Focus is on front-end development, with additional experience in UX/UI design</p>
                 <p class="no-margin">Experienced in:</p>
                 <ul>
                     <li>HTML & CSS</li>
@@ -59,15 +62,55 @@
             <div class="vertical-border"></div>
 
             <section id="proj_list">
-                <div class="flex-container standard-wrap space-evenly">
-
-                    <img src="assets/quizlet.PNG">
-                    <img src="assets/quizlet.PNG">
-                    <img src="assets/quizlet.PNG">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Example 3 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="about.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">Arduino + Processing</p><h3 class="hover-1-title mv-0">Swift Defusal</h3>
+                                        <p class="hover-1-description mv-0"><em>Arduino and Processing Game</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/quizlet.PNG" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Example 2 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="about.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">Arduino + Processing</p><h3 class="hover-1-title mv-0">Swift Defusal</h3>
+                                        <p class="hover-1-description mv-0"><em>Arduino and Processing Game</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/quizlet.PNG" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Example 3 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="about.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">Arduino + Processing</p><h3 class="hover-1-title mv-0">SFU Quizlet</h3>
+                                        <p class="hover-1-description mv-0"><em>Flashcards App for Android</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/quizlet.PNG" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
 
+            
         </div>
+        <script src="js/scripts.js"></script>
     </body>
 
 </html>

@@ -41,6 +41,7 @@ code {
 
 section {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 h1 {
@@ -77,6 +78,10 @@ input[type=text] {
 }
 .main-nav a {
   text-shadow: none;
+}
+
+.main-nav-link {
+  transition: opacity 0.5s ease;
 }
 
 .sidebar {
