@@ -22,26 +22,24 @@
     <body>
 
         <div class="sidebar">
-            <a href=""><i class="bi bi-emoji-laughing-fill"></i></a>
-            <a href=""><i class="bi bi-envelope"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-            <a href=""><i class="bi bi-github"></i></a>
-            <a href="">Return to projects <i class="bi bi-chevron-right"></i> </a>
+            <a href="mailto:pandres@sfu.ca"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/pocholo-andres/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/sleepsim"><i class="bi bi-github"></i></a>
         </div>
 
         <nav class="main-nav-border">
             <div class="main-nav">
-                <a href="" style="max-width: 15%;"><i class="bi bi-house"></i></a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Resume</a>
-                <a href="">Contact</a>
+                <a href="index.html" style="max-width: 15%;"><i class="bi bi-house"></i></a>
+                <a href="about.html" class="main-nav-link" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">About</a>
+                <a href="projects.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Projects</a>
+                <a href="" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Resume</a>
+                <a href="contact.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Contact</a>
             </div>
         </nav>
 
         <div class="main-body">
             <div class="flex-container flex-column align-center no-gap">
-                <h1 class="flex-item">YouTube Shorts Converter Extension</h1>
+                <h1 class="flex-item">YouTube Shorts Converter Extension *</h1>
                 <img src="assets/pr1-1.png" class="flex-item">
             
                 <p>Sometime around last year, YouTube introduced YouTube Shorts, a vertical video format that’s supposed to emulate popular video sites like Tik-Tok and Instagram Reels. The problem with shorts 
@@ -76,6 +74,16 @@
                 <p>This was a fun experience for me to learn JavaScript and coding chrome extensions. The final product looks very basic and incomplete, but the extension works as intended so I'm satisfied.</p>
             </div>
         </div>
+
+        <script src="js/scripts.js"></script>
+
+        <footer>
+            <h4>	&#169; Pocholo Andres</h4>
+            <!-- <p class="no-vertical-margin">Style Guide</p> -->
+            <a href="styleguide.html">Style Guide</a>
+            <a href="google.com">GitHub Repo</a>
+        </footer>
+
     </body>
 
 </html>

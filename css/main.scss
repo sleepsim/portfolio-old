@@ -9,6 +9,7 @@
 }
 
 body {
+    position: relative;
 	background-color: var(--bg-color);
 	padding-bottom: 4rem;
 }
@@ -67,6 +68,30 @@ input[type="text"] {
 	width: 80%;
 	height: 3rem;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    font-family: 'Mulish', sans-serif;
+    color: lightgray;
+    text-align: center;
+    // background-color: var(--nav-color);      /* Footer height */
+
+    a{
+        padding-right: 0.5rem; 
+        padding-left: 0.5rem;
+        font-weight: 0;  
+    }
+
+    h4{
+        font-weight: 100;
+        margin-bottom: 0; 
+    }
+}
+
+//Custom classes
 
 .main-nav {
 	z-index: 9999;
@@ -253,6 +278,10 @@ input[type="text"] {
 	font-size: 4rem;
 }
 
+.text-med {
+    font-size: 2rem;
+}
+
 .text-orange {
 	color: var(--orange-accent);
 }
@@ -260,3 +289,4 @@ input[type="text"] {
 .text-purple {
 	color: var(--purple-accent);
 }
+
