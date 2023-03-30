@@ -22,60 +22,60 @@
     <body>
 
         <div class="sidebar">
-            <a href=""><i class="bi bi-emoji-laughing-fill"></i></a>
-            <a href=""><i class="bi bi-envelope"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-            <a href=""><i class="bi bi-github"></i></a>
-            <a href="">Return to projects <i class="bi bi-chevron-right"></i> </a>
+            <a href="mailto:pandres@sfu.ca"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/pocholo-andres/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/sleepsim"><i class="bi bi-github"></i></a>
         </div>
 
         <nav class="main-nav-border">
             <div class="main-nav">
-                <a href="" style="max-width: 15%;"><i class="bi bi-house"></i></a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Resume</a>
-                <a href="">Contact</a>
+                <a href="index.html" style="max-width: 15%;"><i class="bi bi-house"></i></a>
+                <a href="about.html" class="main-nav-link" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">About</a>
+                <a href="projects.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Projects</a>
+                <a href="resume.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Resume</a>
+                <a href="contact.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Contact</a>
             </div>
         </nav>
 
         <div class="main-body">
             <div class="flex-container flex-column align-center no-gap">
-                <h1 class="flex-item">YouTube Shorts Converter Extension</h1>
-                <img src="assets/pr1-1.png" class="flex-item">
+                <h1 class="flex-item text-orange">Movie Dataset Sort</h1>
+                <img src="assets/pr2-title.png" class="flex-item">
             
-                <p>Sometime around last year, YouTube introduced YouTube Shorts, a vertical video format that’s supposed to emulate popular video sites like Tik-Tok and Instagram Reels. The problem with shorts 
-                    however, was that it was turning some short videos that were not meant to be shorts into YT Shorts. My 
-                    issue with that is YT shorts gives you no control over playback, sound is only a toggle, and the video is fit 
-                    into a vertical frame
+                <p>For one of my courses related to data visualization, I had to create a notebook written in JavaScript that deals with datasets. My dataset was related to movies and I had to create visualization to investigate 
+                    and answer some questions I came up with. I wanted to categorize movies by genre, but the issue was 
+                    some movies contained multiple genres as shown below.
                 </p>
 
-                <p>My solution to this was a coding challenge for me, I created a chromium plugin that can automatically 
-                    convert YT Shorts back into the proper video format. YouTube videos have a unique id and what shorts 
-                    does is change it from watch?v={uniqueID} to shorts?v={uniqueID}. The solution was quite simple, grab 
-                    the URL, find the unique ID, then convert the link. The only issue was I’ve never worked with extensions 
-                    and javascript before
+                <p>The dataset had 2000 movies in the list and I had to find a way to create a new list with only the 
+                    specified genres I want.
                 </p>
 
-                <img src="assets/pr1-2.png">
+                <img src="assets/pr2-1.png">
 
-                <p>After some research, I figured out that my first step should be to find the current tab the user is using. 
-                    Then I do a check if the user is one a shorts video, if it is, then start the process of converting it.
-                    I separate the full link string and isolate the unique video ID.
+                <p>The final result was a cleaned out dataset sorted by genre. I had some fun with it and explored some connections between ratings, genre and runtimes. Since this was a dataset with the top 100 movies of each year from 2002-2023, it was no surprise that the average rating was quite high regardless of genre. 
+                    
                 </p>
 
-                <img src="assets/pr1-3.png">
+                <img src="assets/pr2-7.png">
 
-                <p>From there, I create a new string that basically merges Youtube link + watch?v= + unique ID.
-                    Once that’s done, I created a function that automatically updates the current tab’s url to the fixed 
-                    youtube link thereby getting rid of shorts. The actual UI needs some work but it’s fully functional and 
-                    with a click of a button annoying youtube shorts are replaced with the real video player</p>
+                <p>Another connection I explored was between runtime and rating. Mapping out all the movie runtimes and their rating showed a positive correlation, with most movies falling around 100-120 minutes.</p>
 
-                <img src="assets/pr1-4.png">
+                <img src="assets/pr-8.png">
 
-                <p>This was a fun experience for me to learn JavaScript and coding chrome extensions. The final product looks very basic and incomplete, but the extension works as intended so I'm satisfied.</p>
+                <p>Finding out hidden connections through tons of data and creating easily digestable diagrams was a fun exercise, this was a fun experience that deepened my JavaScript skills as well as learn more about data sorting and data visualization. </p>
             </div>
         </div>
+
+        <script src="js/scripts.js"></script>
+
+        <footer>
+            <h4>	&#169; Pocholo Andres</h4>
+            <!-- <p class="no-vertical-margin">Style Guide</p> -->
+            <a href="styleguide.html">Style Guide</a>
+            <a href="https://github.com/sleepsim/P03-Portfolio">GitHub Repo</a>
+        </footer>
+
     </body>
 
 </html>

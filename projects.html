@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/flexbox.css">
-        <link rel="stylesheet" href="css/animations.css"
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/bootstrapcolumns.css">
+
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,38 +25,154 @@
     <body>
 
         <div class="sidebar">
-            <a href="mailto:pandres@sfu.ca"><i class="bi bi-emoji-laughing-fill"></i></a>
             <a href="mailto:pandres@sfu.ca"><i class="bi bi-envelope"></i></a>
             <a href="https://www.linkedin.com/in/pocholo-andres/"><i class="bi bi-linkedin"></i></a>
             <a href="https://github.com/sleepsim"><i class="bi bi-github"></i></a>
-            <a href="projects.html">Return to projects <i class="bi bi-chevron-right"></i> </a>
         </div>
 
         <nav class="main-nav-border">
             <div class="main-nav">
-                <a href="" style="max-width: 15%;"><i class="bi bi-house"></i></a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Resume</a>
-                <a href="">Contact</a>
+                <a href="index.html" style="max-width: 15%;"><i class="bi bi-house"></i></a>
+                <a href="about.html" class="main-nav-link" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">About</a>
+                <a href="projects.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Projects</a>
+                <a href="resume.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Resume</a>
+                <a href="contact.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Contact</a>
             </div>
         </nav>
 
-        <div class="main-body">
-            <!-- Title area -->
-            <div class="flex-container flex-column align-center no-gap">
-                <h1 class="flex-item">Projects list</h1>
-                <img src="assets/placeholder_400x400.jpg" class="flex-item">
-            </div>
+        <div class="main-body-home">
+            <div class="flex-container flex-column align-start no-gap">
 
-            <div class="flex-container flex-row">
-                <div class="wrap-original-transform">
-                    <div class="original-transform"><a href="">Technical</a></div>
-                    <div class="original-transform"><a href="" >Design </a></div>
+                <p class="no-margin">my stuff</p>
+                <h1 class="no-margin text-orange text-largest">projects &</h1>
+                <h2 class="no-margin text-purple text-largest">work</h2>
+                <p>my collection of select projects and other work related to development or design</p>
+
+                <!-- Button -->
+                <div class="flex-container no-margin">
+                    <a href="#coding" class="button-outline-purple">View Coding Projects <i class="bi bi-chevron-down"></i></a>
+                    <a href="#design" class="button-outline-orange">View Design Projects <i class="bi bi-chevron-down"></i></a>
                 </div>
             </div>
 
+            <div class="vertical-border-alt"></div>
+            <h3 class="text-purple">Coding Projects</h3>
+            <section id="coding">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Example 3 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="process1.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">HTML/CSS/JS</p><h3 class="hover-1-title mv-0">YouTube Shorts Converter</h3>
+                                        <p class="hover-1-description mv-0"><em>Convert YouTube videos</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/pr1-title.png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Example 2 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="process2.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">VegaLite + JavaScript</p><h3 class="hover-1-title mv-0">Movie Dataset Sort</h3>
+                                        <p class="hover-1-description mv-0"><em>Dataset sorting exercise</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/pr2-title.png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Example 3 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="process3.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">Java + Kotlin</p><h3 class="hover-1-title mv-0">SFU Quizlet</h3>
+                                        <p class="hover-1-description mv-0"><em>Flashcards App for Android</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/quizlet.PNG" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <div class="vertical-border"></div>
+            <section id="design">
+                <h3 class="text-orange">Design Projects</h3>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!-- Example 3 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="process1.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">HTML/CSS/JS</p><h3 class="hover-1-title mv-0">YouTube Shorts Converter</h3>
+                                        <p class="hover-1-description mv-0"><em>Convert YouTube videos</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/pr1-title.png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Example 2 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="process2.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">VegaLite + JavaScript</p><h3 class="hover-1-title mv-0">Movie Dataset Sort</h3>
+                                        <p class="hover-1-description mv-0"><em>Dataset sorting exercise</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/pr2-title.png" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Example 3 -->
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <a href="process3.html">
+                                <div class="hover hover-1 mx-auto" >
+                                    <div class="hover-overlay"></div>
+                                    <div class="hover-1-content hover-padding height-100">
+                                        <p class="hover-1-title mv-0">Java + Kotlin</p><h3 class="hover-1-title mv-0">SFU Quizlet</h3>
+                                        <p class="hover-1-description mv-0"><em>Flashcards App for Android</em></p>
+                                    </div>
+                                    <img class="img-fluid h-100" src="assets/quizlet.PNG" alt="..." />
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- <div class="vertical-border"></div> -->
+
+            <!-- <div class="flex-container">
+                <div class="flex-item">
+                    <h2 class="text-med text-orange">Get in touch</p>
+                </div>
+            </div> -->
+
         </div>
+
+
+        <script src="js/scripts.js"></script>
+
+        <footer>
+            <h4>	&#169; Pocholo Andres</h4>
+            <!-- <p class="no-vertical-margin">Style Guide</p> -->
+            <a href="styleguide.html">Style Guide</a>
+            <a href="https://github.com/sleepsim/P03-Portfolio">GitHub Repo</a>
+        </footer>
+
     </body>
 
 </html>

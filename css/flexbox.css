@@ -10,6 +10,9 @@
 .flex-container div {
   padding-left: 2rem;
 }
+.flex-container h1 {
+  font-size: 3rem;
+}
 
 .flex-item {
   flex: 1;
@@ -121,6 +124,17 @@
   border-top-width: 0.1rem;
   border-top-style: solid;
   border-top-color: var(--orange-accent);
+}
+
+.vertical-border-alt {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 0.1rem;
+  padding-left: 0rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: var(--purple-accent);
 }
 
 /* Spacing */

@@ -267,6 +267,35 @@ footer h4 {
   transition: color 0.5s;
 }
 
+.button-outline-orange {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Poppins";
+  color: var(--orange-accent);
+  background-color: transparent;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 8%;
+  border: 0.3rem var(--orange-accent) solid;
+  cursor: pointer;
+}
+.button-outline-orange:hover {
+  color: white;
+  background-color: var(--orange-accent);
+  transition-duration: background-color 1.5s;
+  transition: color 0.5s;
+}
+.button-outline-orange:focus {
+  color: white;
+  background-color: var(--orange-accent);
+  transition-duration: background-color 1.5s;
+  transition: color 0.5s;
+}
+
 .text-largest {
   font-size: 4rem;
 }
