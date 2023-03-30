@@ -1,47 +1,84 @@
-@keyframes expand{
-    0%{
-
-    }
-
-    100%{
-        transform: rotateY(0deg);
-        transform: translateX(2rem);
-    }
+/* Image Hover on main page and projects page*/
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  border-radius: 0.25rem;
 }
 
-@keyframes stretch{
-    0%{
-
-    }
-
-    100%{
-        transform: rotateY(10deg);
-    }
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
 }
 
-
-.wrap-original-transform {
-    perspective: 105px;
-    transform-style: preserve-3d;
-    margin-bottom: 2rem;
+.hover-content {
+  position: relative;
+  z-index: 99;
 }
 
-.original-transform {
-    position: fixed;
-    padding: 1rem;
-    background-color: red;
-    animation: stretch 1s ease-in-out forwards;
-    font-size: 2rem;
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.6s;
+}
+.hover-1 .hover-overlay {
+  width: 95%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 0.6s;
+}
+.hover-1:hover .hover-overlay {
+  width: 100%;
+  opacity: 0;
+}
+.hover-1:hover .hover-1-content {
+  width: 100%;
+  left: 0;
+  bottom: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+.hover-1:hover img {
+  left: 0;
 }
 
-.original-transform a{
-    position: absolute;
+.hover-1-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: 99;
+  transition: all 0.6s;
 }
 
-.original-transform:hover{
-    /* animation: expand;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out; */
-    
-    animation: expand 0.9s ease-in-out forwards;
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-padding {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }

@@ -234,8 +234,8 @@ input[type="text"]{
     transition: color 0.5s;
 }
 
-.img-max-50{
-    max-width: 1rem;
+.max-50{
+    max-width: 50%;
 }
 
 .text-largest{
@@ -249,4 +249,3 @@ input[type="text"]{
 .text-purple{
     color: var(--purple-accent);
 }
-
