@@ -1,3 +1,251 @@
+/* Image Hover on main page and projects page*/
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  border-radius: 0.25rem;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+.hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.6s;
+}
+.hover-1 .hover-overlay {
+  width: 95%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.6s;
+}
+.hover-1:hover .hover-overlay {
+  width: 100%;
+  opacity: 0;
+}
+.hover-1:hover .hover-1-content {
+  width: 100%;
+  left: 0;
+  bottom: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+.hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none;
+}
+.hover-1:hover img {
+  left: 0;
+}
+
+.hover-1-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: 99;
+  transition: all 0.6s;
+}
+
+.hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.hover-padding {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Global animations*/
+/* Flexbox */
+.flex-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.flex-container img {
+  max-width: 60vw;
+}
+.flex-container div {
+  padding-left: 2rem;
+}
+.flex-container h1 {
+  font-size: 3rem;
+}
+
+.flex-item {
+  flex: 1;
+  flex-shrink: 0;
+}
+.flex-item h4 {
+  margin-top: 0;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+.standard-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.no-gap {
+  gap: 0;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.no-grow {
+  flex-grow: 0;
+  flex-basis: content;
+}
+
+/* Borders */
+.top-border {
+  position: relative;
+  border-right: 0.5rem var(--orange-accent) solid;
+  border-top: 0.5rem var(--orange-accent) solid;
+  border-bottom: 0.5rem var(--purple-accent) solid;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  margin-right: 70%;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.render-border {
+  position: relative;
+  border-left: 0.5rem var(--orange-accent) solid;
+  border-top: 0.5rem var(--orange-accent) solid;
+  border-bottom: 0.5rem var(--purple-accent) solid;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-right: 10%;
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.main-nav-border {
+  position: relative;
+  border-left: 0.5rem var(--orange-accent) solid;
+  border-top: 0.5rem var(--orange-accent) solid;
+  border-bottom: 0.5rem var(--purple-accent) solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-right: 0%;
+  margin-left: 65%;
+  border-radius: 2rem 0rem 0rem 2rem;
+}
+
+.left-border {
+  position: relative;
+  border-left: 0.5rem var(--purple-accent) solid;
+  padding-left: 1rem;
+}
+
+.left-border-alternate {
+  position: relative;
+  border-left: 0.5rem var(--orange-accent) solid;
+  padding-left: 1rem;
+}
+
+.vertical-border {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 0.1rem;
+  padding-left: 0rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: var(--orange-accent);
+}
+
+.vertical-border-alt {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 0.1rem;
+  padding-left: 0rem;
+  border-top-width: 0.1rem;
+  border-top-style: solid;
+  border-top-color: var(--purple-accent);
+}
+
+/* Spacing */
+.left-padding {
+  padding-left: 1rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding-left: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.no-vertical-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Bootstrap style container */
 /* Native Elements */
 /* Custom Classes */
 :root {
