@@ -30,11 +30,62 @@
 
         <nav class="main-nav-border">
             <div class="main-nav">
-                <a href="index.html" style="max-width: 15%;"><i class="bi bi-house"></i></a>
-                <a href="about.html" class="main-nav-link" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">About</a>
-                <a href="projects.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Projects</a>
-                <a href="resume.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Resume</a>
-                <a href="contact.html" onmouseover="stylizeLink(this)" onmouseout="restoreLink(this)">Contact</a>
+                <div class="navigation-animate">
+                    <ul>
+                        <!-- Home -->
+                        <li>
+                            <a class="orange" href="index.html">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="bi bi-house" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!-- Linked In -->
+                        <li>
+                            <a class="orange" href="about.html">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                About
+                            </a>
+                        </li>
+    
+                        <!-- Github -->
+                        <li>
+                            <a class="orange" href="projects.html">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="orange" href="resume.html">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Resume
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="orange" href="contact.html">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -48,9 +99,16 @@
 
                 <!-- Button -->
                 <div class="flex-container no-margin">
-                    <a href="#coding" class="button-outline-purple">View Coding Projects <i class="bi bi-chevron-down"></i></a>
-                    <a href="#design" class="button-outline-orange">View Design Projects <i class="bi bi-chevron-down"></i></a>
+                    <!-- Coding Button -->
+                    <div class="animated-button-purple no-padding">
+                        <a href="#coding"><span>Coding Projects<i class="bi bi-chevron-right"></i></span></a>
+                    </div>
+                    <!-- Design Button -->
+                    <div class="animated-button-orange no-padding">
+                        <a href="#design"><span>Coding Projects<i class="bi bi-chevron-right"></i></span></a>
+                    </div>
                 </div>
+                
             </div>
 
             <div class="vertical-border-alt"></div>

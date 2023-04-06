@@ -35,6 +35,9 @@
 .justify-center {
 	justify-content: center;
 }
+.justify-flex-start{
+	justify-content: flex-start;
+}
 .flex-column {
 	flex-direction: column;
 }
@@ -80,10 +83,10 @@
 	border-left: 0.5rem var(--orange-accent) solid;
 	border-top: 0.5rem var(--orange-accent) solid;
 	border-bottom: 0.5rem var(--purple-accent) solid;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 2rem;
-	padding-top: 2rem;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 	margin-top: 2rem;
 	margin-right: 0%;
 	margin-left: 65%;
@@ -141,6 +144,14 @@
 .no-vertical-margin{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.margin-auto{
+	margin: auto;
+}
+
+.width-50{
+	width: 50%;
 }
 
 /* Bootstrap style container */
