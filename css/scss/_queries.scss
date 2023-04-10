@@ -46,9 +46,29 @@
         }
         
         .main-nav-border{
-            margin-left: 54%;
+            margin-left: 20%;
         }
     }
 
 }
+
+@media screen and (max-width: 576px) {
+    body{
+        .main-body-home{
+            padding-left: 5rem;
+            padding-right: 1rem;
+        }
+
+        .main-nav{
+            font-size: 0.8rem;
+            gap: 0;
+        }
+        
+        .main-nav-border{
+            margin-left: 0%;
+        }
+    }
+
+}
+
 
