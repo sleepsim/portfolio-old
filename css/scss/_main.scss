@@ -84,7 +84,6 @@ footer {
     a{
         padding-right: 0.5rem; 
         padding-left: 0.5rem;
-        font-weight: 0;  
     }
 
     h4{
@@ -119,12 +118,10 @@ footer {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: 0;
 	overflow-x: hidden;
 	padding-top: 40vh;
 	padding-left: 1rem;
 	font-family: 'Mulish', Arial, sans-serif;
-	font-weight: light;
 	a {
 		// padding: 6px 8px 6px 16px;
 		display: block;
@@ -146,7 +143,6 @@ footer {
 	padding-top: 10rem;
 	padding-left: 1rem;
 	font-family: 'Mulish', Arial, sans-serif;
-	font-weight: light;
 	a {
 		padding: 6px 8px 6px 16px;
 		display: block;
@@ -273,7 +269,6 @@ footer {
 	&:hover {
 		color: white;
 		background-color: var(--purple-accent);
-		transition-duration: background-color 1.5s;
 		transition: color 0.5s;
 		animation: translateRight 0.3 linear;
 		animation-timing-function: ease-in;
@@ -281,7 +276,6 @@ footer {
 	&:focus {
 		color: white;
 		background-color: var(--purple-accent);
-		transition-duration: background-color 1.5s;
 		transition: color 0.5s;
 	}
 
@@ -307,13 +301,11 @@ footer {
 	&:hover {
 		color: white;
 		background-color: var(--orange-accent);
-		transition-duration: background-color 1.5s;
 		transition: color 0.5s;
 	}
 	&:focus {
 		color: white;
 		background-color: var(--orange-accent);
-		transition-duration: background-color 1.5s;
 		transition: color 0.5s;
 	}
 }

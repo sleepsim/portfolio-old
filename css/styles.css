@@ -268,7 +268,6 @@
 }
 .social-icon-animate ul li a:hover span:nth-child(1) {
   transform: scaleX(0);
-  transform: opacity(1);
   transform-origin: left;
   transition: transform 0.5s;
 }
@@ -820,7 +819,6 @@ footer {
 footer a {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  font-weight: 0;
 }
 footer h4 {
   font-weight: 200;
@@ -850,12 +848,10 @@ footer h4 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: 0;
   overflow-x: hidden;
   padding-top: 40vh;
   padding-left: 1rem;
   font-family: "Mulish", Arial, sans-serif;
-  font-weight: light;
 }
 .sidebar a {
   display: block;
@@ -876,7 +872,6 @@ footer h4 {
   padding-top: 10rem;
   padding-left: 1rem;
   font-family: "Mulish", Arial, sans-serif;
-  font-weight: light;
 }
 .sidebar-sg a {
   padding: 6px 8px 6px 16px;
@@ -1003,7 +998,6 @@ footer h4 {
 .button-outline-purple:hover {
   color: white;
   background-color: var(--purple-accent);
-  transition-duration: background-color 1.5s;
   transition: color 0.5s;
   animation: translateRight 0.3 linear;
   animation-timing-function: ease-in;
@@ -1011,7 +1005,6 @@ footer h4 {
 .button-outline-purple:focus {
   color: white;
   background-color: var(--purple-accent);
-  transition-duration: background-color 1.5s;
   transition: color 0.5s;
 }
 
@@ -1034,13 +1027,11 @@ footer h4 {
 .button-outline-orange:hover {
   color: white;
   background-color: var(--orange-accent);
-  transition-duration: background-color 1.5s;
   transition: color 0.5s;
 }
 .button-outline-orange:focus {
   color: white;
   background-color: var(--orange-accent);
-  transition-duration: background-color 1.5s;
   transition: color 0.5s;
 }
 
