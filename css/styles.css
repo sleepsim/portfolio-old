@@ -36,9 +36,15 @@
     padding-left: 5rem;
     padding-right: 1rem;
   }
+  body .text-largest {
+    font-size: 2rem;
+  }
   body .main-nav {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     gap: 0;
+  }
+  body .flex-container {
+    flex-direction: column;
   }
   body .main-nav-border {
     margin-left: 0%;

@@ -59,9 +59,17 @@
             padding-right: 1rem;
         }
 
+        .text-largest{
+            font-size: 2rem;
+        }
+
         .main-nav{
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             gap: 0;
+        }
+
+        .flex-container{
+            flex-direction: column;
         }
         
         .main-nav-border{
