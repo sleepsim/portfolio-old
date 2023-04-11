@@ -22,17 +22,18 @@
 
     </head>
 
-    <header>
-        <div class="sidebar-sg">
-            <a href="index.html"><i class="bi bi-house"></i></a>
-            <a href="#ethos">ethos.</a>
-            <a href="#interactive_elements">interactive elements.</a>
-            <a href="#combined_elements">combined elements</a>
-            <a href="#citations">citations & sources</a>
-        </div>
-    </header>
-
     <body>
+
+        <header>
+            <div class="sidebar-sg">
+                <a href="index.html"><i class="bi bi-house"></i></a>
+                <a href="#ethos">ethos.</a>
+                <a href="#interactive_elements">interactive elements.</a>
+                <a href="#combined_elements">combined elements</a>
+                <a href="#citations">citations & sources</a>
+            </div>
+        </header>
+
         <div class="main-body-sg">
             <div class="main-title">
                 <h1>Pocholo Andres - Style Guide</h1>
@@ -59,7 +60,7 @@
 
                 <!-- Logo -->
                 <h3>Main Logo</h3>
-                <img src="assets/placeholder_400x400.jpg">
+                <img src="assets/placeholder_400x400.jpg" alt="placeholder img">
                 <div class="vertical-border"></div>
 
                 <!-- Fonts -->
@@ -184,7 +185,7 @@
                     <div class="flex-item">
                         <div class="render-border">
                             <h4>Rendered Element</h4>
-                            <label for="email">Email</label><br>
+                            <label for="emailexample">Email</label><br>
                             <input type="text" id="emailexample" name="emailexample" class="input-text">
                         </div>
                     </div>
@@ -245,7 +246,7 @@
                     <div class="flex-item">
                         <div class="render-border">
                             <h4>Rendered Element</h4>
-                            <a href="#interactive_elements"><img src="assets/placeholder_400x400.jpg" style="width: 50%;" alt="placeholder image"/></a>
+                            <a href="#interactive_elements"><img src="assets/placeholder_400x400.jpg" style="width: 50%;" alt="placeholder image"></a>
                         </div>
                     </div>
                 </div>
@@ -285,12 +286,8 @@
                     <div class="flex-item">
                         <div class="render-border">
                             <h4>Rendered Element</h4>
-                            <h1>Heading 1</h1>
-                            <h2>Heading 2</h2>
-                            <h3>Heading 3</h3>
-                            <h4>Heading 4</h4>
-                            <h5>Heading 5</h5>
-                            <h6>Heading 6</h6>
+                            <!-- Picture otherwise HTML validator will throw error -->
+                            <img src="assets/headings.png" alt="a picture of headings"> 
                         </div>
                     </div>
                 </div>
@@ -435,7 +432,7 @@
                             <div class="flex-container flex-column align-start no-gap">
                 
                                 <p class="no-margin">hello, I'm</p>
-                                <h1 class="no-margin text-orange text-largest">Pocholo Andres</h1>
+                                <h2 class="no-margin text-orange text-largest">Pocholo Andres</h2>
                                 <h2 class="no-margin text-purple text-largest">web dev student</h2>
                                 <p >Hi there, I'm Pocholo Luis, an aspiring web developer currently studying at SFU's Interactive Arts and Technology Program</p>
                                 <p class="no-margin">My Focus is on front-end development, with some design experience. Experienced in:</p>
@@ -453,9 +450,9 @@
                             <div class="vertical-border"></div>
                 
                             <div class="flex-container no-wrap space-evenly">
-                                <img src="assets/placeholder_400x400.jpg">
-                                <img src="assets/placeholder_400x400.jpg">
-                                <img src="assets/placeholder_400x400.jpg">
+                                <img src="assets/placeholder_400x400.jpg" alt="placeholder img">
+                                <img src="assets/placeholder_400x400.jpg" alt="placeholder img">
+                                <img src="assets/placeholder_400x400.jpg" alt="placeholder img">
                             </div>
                         </div>
                     </div>
@@ -468,10 +465,12 @@
 
 
 
-            <section id="citations"></section>
+            <section id="citations">
             <div class="top-border">
-                <h2>Citations and Sources</h2>
+                
+             <h2>Citations and Sources</h2>
             </div>
+
 
             <ul>
                 <li>Google API tutorial <a href="https://developers.google.com/fonts/docs/css2">URL</a></li>
@@ -490,7 +489,9 @@
                 <li>Icons from Bootstrap <a href="https://icons.getbootstrap.com/">URL</a></li>
                 <li>JS Onmouse events. W3Schools. <a href="https://www.w3schools.com/jsref/event_onmouseover.asp">URL</a></li>
                 <li>.....And other things learned from lecture/labs</li>
-              </ul>
+            </ul>
+
+            </section>
 
         </div> <!-- Main Body Div -->
     </body>
